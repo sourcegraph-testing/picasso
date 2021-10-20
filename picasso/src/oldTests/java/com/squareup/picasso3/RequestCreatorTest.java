@@ -342,7 +342,6 @@ public class RequestCreatorTest {
         try {
           new RequestCreator(picasso, null, 0).into(mockTarget());
           fail("Should have thrown IllegalStateException");
-        } catch (IllegalStateException ignored) {
         } finally {
           latch.countDown();
         }
@@ -360,7 +359,6 @@ public class RequestCreatorTest {
         try {
           new RequestCreator(picasso, URI_1, 0).into(mockImageViewTarget());
           fail("Should have thrown IllegalStateException");
-        } catch (IllegalStateException ignored) {
         } finally {
           latch.countDown();
         }
